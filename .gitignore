@@ -1,0 +1,15 @@
+.venv/
+.runtime/
+data/
+runs/
+__pycache__/
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+*.joblib
+*.pt
+.DS_Store
+!artifacts/baselines.joblib
+!artifacts/mlp.pt
+!artifacts/d1/model.joblib

@@ -1,0 +1,4 @@
+interface:
+  display_name: "MedPredict ML Engineering"
+  short_description: "Medical ML planning, evaluation and integration"
+  default_prompt: "Use $medpredict-ml-engineering to complete this MedPredict ML task with explicit data contracts and verifiable evidence."

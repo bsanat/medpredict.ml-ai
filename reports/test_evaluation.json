@@ -1,0 +1,313 @@
+{
+  "selected_family": "mlp",
+  "selected_by": "validation before test access",
+  "selection_sha256": "f6333a094ee80cb0ac52cf49b66b4e96e41dd046b5e9c41cced624489d1c3472",
+  "test_used_for_tuning": false,
+  "metrics": {
+    "mean": {
+      "n": 497,
+      "mae": 14.023685594941337,
+      "weighted_mae": 13.231276837578818,
+      "rmse": 18.46219169926293,
+      "weighted_rmse": 17.140419817579186,
+      "r2": -0.01801500065149564,
+      "weighted_r2": -3.066060594592024e-05,
+      "median_absolute_error": 11.315797039232862,
+      "mean_signed_error": -2.4559714188438715,
+      "weighted_mean_signed_error": -0.09490851186301416
+    },
+    "ridge": {
+      "n": 497,
+      "mae": 12.398997992093737,
+      "weighted_mae": 11.268030498474559,
+      "rmse": 16.42472202227644,
+      "weighted_rmse": 15.149492508243403,
+      "r2": 0.1942807837984537,
+      "weighted_r2": 0.21879219212374013,
+      "median_absolute_error": 9.786075843720567,
+      "mean_signed_error": -2.1600733154947025,
+      "weighted_mean_signed_error": -0.5320931643769705
+    },
+    "gradient_boosting": {
+      "n": 497,
+      "mae": 12.514828449377484,
+      "weighted_mae": 11.698303333455803,
+      "rmse": 16.45470285570277,
+      "weighted_rmse": 15.731636032479729,
+      "r2": 0.19133666331330046,
+      "weighted_r2": 0.15760033417847563,
+      "median_absolute_error": 10.466053360863782,
+      "mean_signed_error": -2.252260084746849,
+      "weighted_mean_signed_error": -0.19268071966147698
+    },
+    "mlp": {
+      "n": 497,
+      "mae": 12.395612879138438,
+      "weighted_mae": 11.225385485276208,
+      "rmse": 16.380559702731645,
+      "weighted_rmse": 15.308926996472543,
+      "r2": 0.19860774810692228,
+      "weighted_r2": 0.20226267975185708,
+      "median_absolute_error": 9.846590677897154,
+      "mean_signed_error": -2.3610837234097954,
+      "weighted_mean_signed_error": -0.6767390435181464
+    }
+  },
+  "uncertainty": {
+    "mean": {
+      "weighted_mae_95_interval": [
+        12.166247625976402,
+        14.338837004074351
+      ]
+    },
+    "ridge": {
+      "weighted_mae_95_interval": [
+        10.18135733352631,
+        12.286460310899939
+      ]
+    },
+    "gradient_boosting": {
+      "weighted_mae_95_interval": [
+        10.57457576718729,
+        12.787894591005788
+      ]
+    },
+    "mlp": {
+      "weighted_mae_95_interval": [
+        10.141019551955191,
+        12.221246629007446
+      ]
+    },
+    "selected_minus_mean_mae_95_interval": [
+      -2.6496144837420608,
+      -1.392294418420561
+    ],
+    "method": "1000 stratified masked-PSU resamples, conditional complete-case held-out sample; approximate, not full survey population variance"
+  },
+  "subgroups_selected_model": {
+    "sex": {
+      "female": {
+        "n": 245,
+        "mae": 13.468972809460698,
+        "weighted_mae": 13.061452287087484,
+        "rmse": 17.83218179226669,
+        "weighted_rmse": 17.84876554163982,
+        "r2": 0.23616151083329107,
+        "weighted_r2": 0.19293519306133866,
+        "median_absolute_error": 10.292724609375,
+        "mean_signed_error": -3.961106706476536,
+        "weighted_mean_signed_error": -0.9947270215708923,
+        "small_group_caution": false
+      },
+      "male": {
+        "n": 252,
+        "mae": 11.352068502436241,
+        "weighted_mae": 9.475940182194334,
+        "rmse": 14.833688672590279,
+        "weighted_rmse": 12.41455368080775,
+        "r2": 0.1267977921318787,
+        "weighted_r2": 0.16716564804097067,
+        "median_absolute_error": 8.812639872233063,
+        "mean_signed_error": -0.8055058232060198,
+        "weighted_mean_signed_error": -0.37375302248008335,
+        "small_group_caution": false
+      }
+    },
+    "age": {
+      "[18, 40)": {
+        "n": 179,
+        "mae": 8.548812638891919,
+        "weighted_mae": 8.412383780839347,
+        "rmse": 10.556082360097776,
+        "weighted_rmse": 10.329085569503603,
+        "r2": 0.21069638724120265,
+        "weighted_r2": 0.2507736304670607,
+        "median_absolute_error": 6.764574686686217,
+        "mean_signed_error": 0.11643226097859806,
+        "weighted_mean_signed_error": 1.5141353895515375,
+        "small_group_caution": false
+      },
+      "[40, 60)": {
+        "n": 160,
+        "mae": 12.586380338668821,
+        "weighted_mae": 12.524439890978039,
+        "rmse": 16.456405619178945,
+        "weighted_rmse": 17.931816779518787,
+        "r2": -0.029958529579113824,
+        "weighted_r2": -0.02800984474749879,
+        "median_absolute_error": 9.939957936604827,
+        "mean_signed_error": -2.563571818669639,
+        "weighted_mean_signed_error": -2.9878924060150833,
+        "small_group_caution": false
+      },
+      "[60, 80)": {
+        "n": 158,
+        "mae": 16.560514458121126,
+        "weighted_mae": 13.707597021694378,
+        "rmse": 21.060513707777368,
+        "weighted_rmse": 17.515253518692315,
+        "r2": -0.06499388399380335,
+        "weighted_r2": 0.021519925896378744,
+        "median_absolute_error": 14.01037851969403,
+        "mean_signed_error": -4.962838571282882,
+        "weighted_mean_signed_error": -0.7576183713086596,
+        "small_group_caution": false
+      }
+    },
+    "target_range_research_bins": {
+      "[0, 110)": {
+        "n": 124,
+        "mae": 12.86437592455136,
+        "weighted_mae": 12.152144876333114,
+        "rmse": 14.898290351634609,
+        "weighted_rmse": 13.964355911412325,
+        "r2": -7.750449243711202,
+        "weighted_r2": -4.90372484701508,
+        "median_absolute_error": 12.345151265462249,
+        "mean_signed_error": 12.712426359935472,
+        "weighted_mean_signed_error": 12.036466997675342,
+        "small_group_caution": false
+      },
+      "[110, 130)": {
+        "n": 223,
+        "mae": 6.650913438098491,
+        "weighted_mae": 5.931851719789708,
+        "rmse": 8.16004518669816,
+        "weighted_rmse": 7.416336545544291,
+        "r2": -1.2304345959069547,
+        "weighted_r2": -0.8467310872380978,
+        "median_absolute_error": 5.253931681315123,
+        "mean_signed_error": 1.4155511784802985,
+        "weighted_mean_signed_error": 1.563361961791917,
+        "small_group_caution": false
+      },
+      "[130, 150)": {
+        "n": 108,
+        "mae": 14.317828402107146,
+        "weighted_mae": 12.729744637685002,
+        "rmse": 16.234342070825704,
+        "weighted_rmse": 14.523835502131318,
+        "r2": -6.476755831476102,
+        "weighted_r2": -5.996768838645795,
+        "median_absolute_error": 14.42929458618164,
+        "mean_signed_error": -14.162125646332166,
+        "weighted_mean_signed_error": -12.519793600824425,
+        "small_group_caution": false
+      },
+      "[150, 1000)": {
+        "n": 42,
+        "mae": 36.570424337235714,
+        "weighted_mae": 41.365801311248966,
+        "rmse": 38.58228887125796,
+        "weighted_rmse": 43.984242659675715,
+        "r2": -9.376153101649445,
+        "weighted_r2": -12.569715862263216,
+        "median_absolute_error": 31.650060017903655,
+        "mean_signed_error": -36.570424337235714,
+        "weighted_mean_signed_error": -41.365801311248966,
+        "small_group_caution": true
+      }
+    },
+    "medication": {
+      "no": {
+        "n": 43,
+        "mae": 19.379667888316074,
+        "weighted_mae": 16.029056556549286,
+        "rmse": 24.160873003626723,
+        "weighted_rmse": 20.01187336645843,
+        "r2": -0.10508210388942008,
+        "weighted_r2": -0.012788241262753797,
+        "median_absolute_error": 14.963956197102846,
+        "mean_signed_error": -13.652155558268234,
+        "weighted_mean_signed_error": -10.377335846620975,
+        "small_group_caution": true
+      },
+      "unknown": {
+        "n": 340,
+        "mae": 10.000729893703088,
+        "weighted_mae": 9.116120378513365,
+        "rmse": 12.703307549420202,
+        "weighted_rmse": 11.381537582013625,
+        "r2": 0.19755764604414427,
+        "weighted_r2": 0.23898998917862957,
+        "median_absolute_error": 8.253653208414718,
+        "mean_signed_error": 0.4393958447026264,
+        "weighted_mean_signed_error": 1.7542352747432115,
+        "small_group_caution": false
+      },
+      "yes": {
+        "n": 114,
+        "mae": 16.90390980592248,
+        "weighted_mae": 18.290751718047282,
+        "rmse": 21.640620803291903,
+        "weighted_rmse": 24.74893231954138,
+        "r2": -0.06800494145934399,
+        "weighted_r2": -0.2072900371478772,
+        "median_absolute_error": 14.708263397216797,
+        "mean_signed_error": -6.454478146737081,
+        "weighted_mean_signed_error": -7.270226473265238,
+        "small_group_caution": false
+      }
+    }
+  },
+  "benchmark": {
+    "mean": {
+      "p50_ms": 0.001292,
+      "p95_ms": 0.0013360499999999992,
+      "iterations": 200,
+      "scope": "preloaded Python model, one row, CPU"
+    },
+    "ridge": {
+      "p50_ms": 0.112833,
+      "p95_ms": 0.12068154999999998,
+      "iterations": 200,
+      "scope": "preloaded Python model, one row, CPU"
+    },
+    "gradient_boosting": {
+      "p50_ms": 0.8355414999999999,
+      "p95_ms": 0.8900131499999999,
+      "iterations": 200,
+      "scope": "preloaded Python model, one row, CPU"
+    },
+    "mlp": {
+      "p50_ms": 0.039958,
+      "p95_ms": 0.041421150000000004,
+      "iterations": 200,
+      "scope": "preloaded Python model, one row, CPU"
+    }
+  },
+  "validation_permutation_sensitivity": {
+    "age": {
+      "mean_mae_increase": 2.4452382374089305,
+      "std": 0.3617258767507422,
+      "interpretation": "non-causal validation permutation sensitivity; correlated inputs limit interpretation"
+    },
+    "sex": {
+      "mean_mae_increase": 1.1212712864833136,
+      "std": 0.2228702903177582,
+      "interpretation": "non-causal validation permutation sensitivity; correlated inputs limit interpretation"
+    },
+    "bmi": {
+      "mean_mae_increase": 0.16542515321722426,
+      "std": 0.12231523050389961,
+      "interpretation": "non-causal validation permutation sensitivity; correlated inputs limit interpretation"
+    },
+    "totalCholesterol": {
+      "mean_mae_increase": 0.37111954499834265,
+      "std": 0.1354613062030254,
+      "interpretation": "non-causal validation permutation sensitivity; correlated inputs limit interpretation"
+    },
+    "glucose": {
+      "mean_mae_increase": 0.25074721937630573,
+      "std": 0.08675482215222148,
+      "interpretation": "non-causal validation permutation sensitivity; correlated inputs limit interpretation"
+    }
+  },
+  "limitations": [
+    "cross-sectional current-measurement estimation",
+    "complete-case fasting subsample",
+    "internal participant holdout; no external clinical validation",
+    "US population; Kazakhstan transfer not measured",
+    "subgroup bins are descriptive research groups, not diagnostic categories"
+  ]
+}

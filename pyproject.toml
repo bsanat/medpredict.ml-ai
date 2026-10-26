@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medpredict-ml"
+version = "0.1.0"
+description = "Reproducible NHANES systolic blood pressure estimation experiment"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "numpy==2.3.5", "pandas==2.2.3", "pyreadstat==1.3.1", "scipy==1.16.3",
+  "scikit-learn==1.7.2", "torch==2.9.1", "onnx==1.19.1",
+  "onnxruntime==1.23.2", "skl2onnx==1.19.1", "matplotlib==3.10.7",
+]
+
+[project.optional-dependencies]
+test = ["pytest==8.4.2", "pytest-cov==7.0.0"]
+
+[project.scripts]
+medpredict-ml = "medpredict_ml.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+

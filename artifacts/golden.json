@@ -1,0 +1,53 @@
+{
+  "absoluteTolerance": 0.01,
+  "featureOrder": [
+    "age",
+    "sex",
+    "bmi",
+    "totalCholesterol",
+    "glucose"
+  ],
+  "source": "Synthetic test inputs, not training observations or clinical reference values",
+  "cases": [
+    {
+      "input": {
+        "age": 52,
+        "sex": "male",
+        "bmi": 27.4,
+        "totalCholesterol": 5.6,
+        "glucose": 5.9
+      },
+      "expected": 125.29279327392578
+    },
+    {
+      "input": {
+        "age": 35,
+        "sex": "female",
+        "bmi": 23.5,
+        "totalCholesterol": 4.5,
+        "glucose": 4.8
+      },
+      "expected": 107.82040405273438
+    },
+    {
+      "input": {
+        "age": 70,
+        "sex": "male",
+        "bmi": 30.0,
+        "totalCholesterol": 6.1,
+        "glucose": 6.4
+      },
+      "expected": 133.12290954589844
+    },
+    {
+      "input": {
+        "age": 45,
+        "sex": "female",
+        "bmi": 26.0,
+        "totalCholesterol": 5.0,
+        "glucose": 5.2
+      },
+      "expected": 112.76968383789062
+    }
+  ]
+}

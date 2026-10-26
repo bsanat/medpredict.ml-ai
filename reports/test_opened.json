@@ -1,0 +1,6 @@
+{
+  "opened_at_utc": "2026-10-20T22:27:54.019088+00:00",
+  "selection_sha256": "f6333a094ee80cb0ac52cf49b66b4e96e41dd046b5e9c41cced624489d1c3472",
+  "protocol_sha256": "3ea1478bec646d987c1d9eca1db1d6b44635702f8622932ee15dc65f5406bf55",
+  "rule": "Persistent lock written before accessing held-out targets; training and preparation are now disabled"
+}

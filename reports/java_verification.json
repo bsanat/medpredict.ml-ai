@@ -1,0 +1,43 @@
+{
+  "modelVersion": "MedPredict-SBP-mlp-v2",
+  "modelSha256": "3a4be6a1746f4230a5dba7346e3948e56cabc400540c91b0fbcd7882299dbe2a",
+  "javaOnnxRuntimeVersion": "1.24.3",
+  "caseCount": 4,
+  "absoluteTolerance": 0.01,
+  "maximumAbsoluteError": 7.62939453125e-06,
+  "passed": true,
+  "verifiedAtUtc": "2026-10-20T22:30:40.292607+00:00",
+  "backendBaseCommit": "3588c363e3d34946d86ce75be39a5695a8073176",
+  "backendPatchSha256": "d3d447dad32f7a7e315692307af063305c649128512d7f4d72c67ad79752190f",
+  "backendTests": {
+    "tests": 48,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "javaVersion": "21.0.8 Microsoft OpenJDK",
+  "mavenVersion": "3.9.16",
+  "platform": "macOS arm64",
+  "packagedJarBuildPassed": true,
+  "packagedHttpReadinessVerified": true,
+  "artifactDirectory": "ml/artifacts",
+  "dataManifestSha256": "f4dadccc384e48cd10978263107afbb25be223698f99e1a6ce351bd04c22bd44",
+  "protocolSha256": "3ea1478bec646d987c1d9eca1db1d6b44635702f8622932ee15dc65f5406bf55",
+  "verificationCommand": "sh mvnw -Dmedpredict.model.test-directory=<path-to-ml>/artifacts test",
+  "clinicalValidation": false,
+  "localPreview": {
+    "frontend": "http://127.0.0.1:5173",
+    "backend": "http://127.0.0.1:8080",
+    "backendPidAtVerification": 92635,
+    "jarPath": "<backend-checkout>/target/backend-0.0.1-SNAPSHOT.jar",
+    "artifactDirectory": "<path-to-ml>/artifacts",
+    "ready": true,
+    "status": "READY",
+    "modelVersion": "MedPredict-SBP-mlp-v2",
+    "demo": false,
+    "temporaryTestServersStopped": [
+      8081,
+      8082
+    ]
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "raw_table_counts": {
+    "P_DEMO": 15560,
+    "P_BMX": 14300,
+    "P_TCHOL": 12198,
+    "P_GLU": 5090,
+    "P_BPXO": 11656,
+    "P_BPQ": 10195
+  },
+  "merged_participants": 15560,
+  "missing_after_merge": {
+    "age": 0,
+    "sex": 0,
+    "bmi": 2423,
+    "totalCholesterol": 4732,
+    "glucose": 10816,
+    "weight": 10470
+  },
+  "attrition": [
+    {
+      "step": "demographics and one-to-one left joins",
+      "remaining": 15560,
+      "excluded": 0
+    },
+    {
+      "step": "age 18–79; exclude topcoded 80+",
+      "remaining": 9011,
+      "excluded": 6549
+    },
+    {
+      "step": "positive official fasting subsample weight",
+      "remaining": 3720,
+      "excluded": 5291
+    },
+    {
+      "step": "documented sex category",
+      "remaining": 3720,
+      "excluded": 0
+    },
+    {
+      "step": "at least two valid paired SBP readings",
+      "remaining": 3397,
+      "excluded": 323
+    },
+    {
+      "step": "five observed finite features; no target or feature imputation",
+      "remaining": 3318,
+      "excluded": 79
+    },
+    {
+      "step": "positive measured BMI and SI laboratory values",
+      "remaining": 3318,
+      "excluded": 0
+    },
+    {
+      "step": "available survey design variables",
+      "remaining": 3318,
+      "excluded": 0
+    }
+  ],
+  "invalid_sbp_readings": 0,
+  "target_definition": "Mean of >=2 valid oscillometric systolic readings at the same examination",
+  "final_participants": 3318,
+  "xpt_reader": "pyreadstat 1.3.1",
+  "raw_fasting_weight_zero_count": 614,
+  "raw_fasting_weight_positive_min": 4808.0699159801,
+  "split_counts": {
+    "train": 2324,
+    "test": 497,
+    "validation": 497
+  },
+  "missing_percent_after_merge": {
+    "age": 0.0,
+    "sex": 0.0,
+    "bmi": 15.572,
+    "totalCholesterol": 30.411,
+    "glucose": 69.512,
+    "weight": 67.288
+  },
+  "complete_case_descriptive": {
+    "age": {
+      "count": 3318.0,
+      "mean": 47.75919228450874,
+      "std": 16.880242803836307,
+      "min": 18.0,
+      "25%": 33.0,
+      "50%": 49.0,
+      "75%": 62.0,
+      "max": 79.0
+    },
+    "sex": {
+      "count": 3318.0,
+      "mean": 0.5123568414707655,
+      "std": 0.4999226257586891,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 1.0
+    },
+    "bmi": {
+      "count": 3318.0,
+      "mean": 29.962507534659434,
+      "std": 7.542817101144502,
+      "min": 15.4,
+      "25%": 24.7,
+      "50%": 28.6,
+      "75%": 33.8,
+      "max": 74.8
+    },
+    "totalCholesterol": {
+      "count": 3318.0,
+      "mean": 4.746564195298372,
+      "std": 1.068894519335703,
+      "min": 1.97,
+      "25%": 4.01,
+      "50%": 4.63,
+      "75%": 5.38,
+      "max": 11.53
+    },
+    "glucose": {
+      "count": 3318.0,
+      "mean": 6.2450904159132,
+      "std": 2.0843418948006662,
+      "min": 2.61,
+      "25%": 5.33,
+      "50%": 5.72,
+      "75%": 6.27,
+      "max": 25.0
+    },
+    "target": {
+      "count": 3318.0,
+      "mean": 122.6431082981716,
+      "std": 18.238306429450166,
+      "min": 78.66666666666667,
+      "25%": 109.66666666666667,
+      "50%": 120.0,
+      "75%": 132.33333333333334,
+      "max": 214.0
+    },
+    "weight": {
+      "count": 3318.0,
+      "mean": 65377.94103304581,
+      "std": 75424.66554292403,
+      "min": 4808.0699159801,
+      "25%": 22212.247464121378,
+      "50%": 38292.40109433395,
+      "75%": 75646.10426118875,
+      "max": 741259.188749246
+    }
+  },
+  "correlations_pearson_descriptive_only": {
+    "age": {
+      "age": 1.0,
+      "sex": -0.016634551409745398,
+      "bmi": 0.059544686298858916,
+      "totalCholesterol": 0.1294530752843305,
+      "glucose": 0.23288555304493358,
+      "target": 0.42909811980905105
+    },
+    "sex": {
+      "age": -0.016634551409745398,
+      "sex": 1.0,
+      "bmi": 0.11326006274844151,
+      "totalCholesterol": 0.06606584585353674,
+      "glucose": -0.07024577430939156,
+      "target": -0.14391335421457896
+    },
+    "bmi": {
+      "age": 0.059544686298858916,
+      "sex": 0.11326006274844151,
+      "bmi": 1.0,
+      "totalCholesterol": -0.029780372147742623,
+      "glucose": 0.18935032858363904,
+      "target": 0.07860403629352866
+    },
+    "totalCholesterol": {
+      "age": 0.1294530752843305,
+      "sex": 0.06606584585353674,
+      "bmi": -0.029780372147742623,
+      "totalCholesterol": 1.0,
+      "glucose": 0.020739921813343207,
+      "target": 0.11606090417156201
+    },
+    "glucose": {
+      "age": 0.23288555304493358,
+      "sex": -0.07024577430939156,
+      "bmi": 0.18935032858363904,
+      "totalCholesterol": 0.020739921813343207,
+      "glucose": 1.0,
+      "target": 0.16608913565222244
+    },
+    "target": {
+      "age": 0.42909811980905105,
+      "sex": -0.14391335421457896,
+      "bmi": 0.07860403629352866,
+      "totalCholesterol": 0.11606090417156201,
+      "glucose": 0.16608913565222244,
+      "target": 1.0
+    }
+  },
+  "medication_counts": {
+    "unknown": 2213,
+    "yes": 922,
+    "no": 183
+  }
+}

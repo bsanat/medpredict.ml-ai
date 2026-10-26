@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-26",
+  "scope": "project-local",
+  "skills": [
+    {
+      "name": "scikit-learn",
+      "source_repository": "K-Dense-AI/scientific-agent-skills",
+      "source_revision": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+      "source_path": "skills/scikit-learn",
+      "adaptations": [
+        "Move top-level compatibility field unchanged into metadata.compatibility for Codex validation",
+        "Retain repository LICENSE.md as UPSTREAM-LICENSE.md"
+      ],
+      "files": [
+        {
+          "path": "SKILL.md",
+          "local_sha256": "bd3be29d0fe77116d8ccc4a110e93339867460d2597b44206d1f5874089b141f",
+          "upstream_sha256": "a1765797d072ab40094522abe68fb04505d0881f66b7dfceeb8582422dbe488d",
+          "upstream_git_blob": "9e26cff8bd282c523b645719c817c1415e0ddb3f"
+        },
+        {
+          "path": "UPSTREAM-LICENSE.md",
+          "local_sha256": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1"
+        },
+        {
+          "path": "references/common_workflows.md",
+          "local_sha256": "dfe19c80358acb5f418a21cea4de3b7e83733481441f3c76d0a2ead4420261de",
+          "upstream_sha256": "dfe19c80358acb5f418a21cea4de3b7e83733481441f3c76d0a2ead4420261de",
+          "upstream_git_blob": "aaa5b03bf7cf5c594563ed2088c917388a79ac1e"
+        },
+        {
+          "path": "references/core_capabilities.md",
+          "local_sha256": "c869d9c207fcfc345207d397021a289f3820492ddf0fcd0b3a56a336bd0e1453",
+          "upstream_sha256": "c869d9c207fcfc345207d397021a289f3820492ddf0fcd0b3a56a336bd0e1453",
+          "upstream_git_blob": "2af06ddb50e73d02e137e523dc5bbd45a0f02e99"
+        },
+        {
+          "path": "references/model_evaluation.md",
+          "local_sha256": "e6f581c0ce2abffaac2f0bafc1a7bfbe86ec18f8969c6e9b91cc732a12a5fea5",
+          "upstream_sha256": "e6f581c0ce2abffaac2f0bafc1a7bfbe86ec18f8969c6e9b91cc732a12a5fea5",
+          "upstream_git_blob": "029028aebaca4e2459a9fb2f088f57784a67d46b"
+        },
+        {
+          "path": "references/pipelines_and_composition.md",
+          "local_sha256": "a1810cd67dc9141d962fa1972e11b06be6bd437213e10a563e5ec4256fb274a9",
+          "upstream_sha256": "a1810cd67dc9141d962fa1972e11b06be6bd437213e10a563e5ec4256fb274a9",
+          "upstream_git_blob": "e12dd329aaf34c4474def8df80971bc6d4fbe001"
+        },
+        {
+          "path": "references/preprocessing.md",
+          "local_sha256": "098506f0ca83e57d0c7cccd166164d025552ad7310b79d1010f5ff34e1cc4818",
+          "upstream_sha256": "098506f0ca83e57d0c7cccd166164d025552ad7310b79d1010f5ff34e1cc4818",
+          "upstream_git_blob": "35ff7e8558bb7a0ad9cd870d1d303fc3908f0d6c"
+        },
+        {
+          "path": "references/quick_reference.md",
+          "local_sha256": "5401b75fdaa10bf393b024f3c559631011c7be233d2313da37a3f27d7389659a",
+          "upstream_sha256": "5401b75fdaa10bf393b024f3c559631011c7be233d2313da37a3f27d7389659a",
+          "upstream_git_blob": "f899eaeb382d860424a20adb13895750394bcf39"
+        },
+        {
+          "path": "references/supervised_learning.md",
+          "local_sha256": "d4e5911d175c3a349dd42e33c984b05cdafce230f264b6774996d0eeef36608a",
+          "upstream_sha256": "d4e5911d175c3a349dd42e33c984b05cdafce230f264b6774996d0eeef36608a",
+          "upstream_git_blob": "758728c3b29aa49beed9d1ea5ebc0965d7d26aea"
+        },
+        {
+          "path": "references/unsupervised_learning.md",
+          "local_sha256": "cb476ef499fe35ee2c0416fdc31abad42384ac0110f6d3932901e99b039ae1b1",
+          "upstream_sha256": "cb476ef499fe35ee2c0416fdc31abad42384ac0110f6d3932901e99b039ae1b1",
+          "upstream_git_blob": "75c06cfbbbd28535411a8214dc2168db0e39447d"
+        },
+        {
+          "path": "scripts/classification_pipeline.py",
+          "local_sha256": "46abbb2b11095147cc31314405910b211c313d142f2480599f8508d47e5809f3",
+          "upstream_sha256": "46abbb2b11095147cc31314405910b211c313d142f2480599f8508d47e5809f3",
+          "upstream_git_blob": "32f00ab59488c4e6ff6aedbf603c557011a03c4f"
+        },
+        {
+          "path": "scripts/clustering_analysis.py",
+          "local_sha256": "5d1f962a70e049907a39a75cd7a130000a5d3e3de5a4fa4889d07f007c052a17",
+          "upstream_sha256": "5d1f962a70e049907a39a75cd7a130000a5d3e3de5a4fa4889d07f007c052a17",
+          "upstream_git_blob": "9edcac0e3ffa2fb8b8af709c1f2ce233f8a32c8f"
+        }
+      ]
+    },
+    {
+      "name": "scientific-critical-thinking",
+      "source_repository": "K-Dense-AI/scientific-agent-skills",
+      "source_revision": "5f2bc0341354fd5590aef76a533ada1e1e5b4e62",
+      "source_path": "skills/scientific-critical-thinking",
+      "adaptations": [
+        "Move top-level compatibility field unchanged into metadata.compatibility for Codex validation",
+        "Retain repository LICENSE.md as UPSTREAM-LICENSE.md"
+      ],
+      "files": [
+        {
+          "path": "SKILL.md",
+          "local_sha256": "336ecb1587b29da66e9fbced07b78206ce2858bd679b724814a3580ad3ddc49d",
+          "upstream_sha256": "563af70571b7dcd6a96bf2e303bedfdcba623b4e9f082d58f04aacbc961fdae4",
+          "upstream_git_blob": "2a2fc151b5b13e4e11ece7410f21a14d5b25e30d"
+        },
+        {
+          "path": "UPSTREAM-LICENSE.md",
+          "local_sha256": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1"
+        },
+        {
+          "path": "references/common_biases.md",
+          "local_sha256": "641e8e8e6dfadac1643ea8691b7d3e4e58cf013f134cd42c71301878096a5a39",
+          "upstream_sha256": "641e8e8e6dfadac1643ea8691b7d3e4e58cf013f134cd42c71301878096a5a39",
+          "upstream_git_blob": "0acba93293aaf6df629cc00212c9e86a184efdb0"
+        },
+        {
+          "path": "references/core_capabilities.md",
+          "local_sha256": "0f337b96aa2d7453433a17824368fbd0638b9469d4f90a5fd23f4167c9dee180",
+          "upstream_sha256": "0f337b96aa2d7453433a17824368fbd0638b9469d4f90a5fd23f4167c9dee180",
+          "upstream_git_blob": "ca7fec36594abd20921d2aa2ae15e9363d3d58b1"
+        },
+        {
+          "path": "references/evidence_hierarchy.md",
+          "local_sha256": "534fbe991ecfb2d162f755004dc528118ce74a78862917c2911595a522d76e6c",
+          "upstream_sha256": "534fbe991ecfb2d162f755004dc528118ce74a78862917c2911595a522d76e6c",
+          "upstream_git_blob": "e4b4946886cee0b1e35b24309e162e0f9ca6f14b"
+        },
+        {
+          "path": "references/experimental_design.md",
+          "local_sha256": "eca7e42025393984c07676f3d4bc354d217e5604dc2209c76215d31953a7c74c",
+          "upstream_sha256": "eca7e42025393984c07676f3d4bc354d217e5604dc2209c76215d31953a7c74c",
+          "upstream_git_blob": "4be76ae49eb6339e6a72c8d3ee69338c4ea3e347"
+        },
+        {
+          "path": "references/logical_fallacies.md",
+          "local_sha256": "becfc5bfac7b831dca67cc442cd0fcb42d8eea527a6fc2921c1b704e592ff593",
+          "upstream_sha256": "becfc5bfac7b831dca67cc442cd0fcb42d8eea527a6fc2921c1b704e592ff593",
+          "upstream_git_blob": "336a0407f4397f8ad9b218fc4156ef3473d19f70"
+        },
+        {
+          "path": "references/review_sources.md",
+          "local_sha256": "71e75106f36f3e69b28959ad1fec503ccdb21b7f5361ab230173e4812accbf62",
+          "upstream_sha256": "71e75106f36f3e69b28959ad1fec503ccdb21b7f5361ab230173e4812accbf62",
+          "upstream_git_blob": "0241f4aa470f86473cd8be196edeff07a274b261"
+        },
+        {
+          "path": "references/scientific_method.md",
+          "local_sha256": "5aa925b97c7a916f819dafc8b42a9c24e4bd3eb2836594e724f1e7f9ae75ea0f",
+          "upstream_sha256": "5aa925b97c7a916f819dafc8b42a9c24e4bd3eb2836594e724f1e7f9ae75ea0f",
+          "upstream_git_blob": "4dee3644c01de3bec9250d19efa58a0a13cbee59"
+        },
+        {
+          "path": "references/statistical_pitfalls.md",
+          "local_sha256": "0c43204a0a81110cfeb7c982fa4caa89f274bdcebf096e09e5adfccf31241cb9",
+          "upstream_sha256": "0c43204a0a81110cfeb7c982fa4caa89f274bdcebf096e09e5adfccf31241cb9",
+          "upstream_git_blob": "1e78cb2d3c6873e7d8289009cc7c9fb772def542"
+        }
+      ]
+    }
+  ],
+  "custom_skill": {
+    "name": "medpredict-ml-engineering",
+    "source": "project-authored"
+  },
+  "existing_plugin": "ECC 2.2.3 reused without reinstall"
+}
