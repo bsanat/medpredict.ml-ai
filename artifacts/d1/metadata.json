@@ -1,0 +1,86 @@
+{
+  "task": "D1-HBA1C-SCREEN-v1",
+  "schemaVersion": "2.0",
+  "modelVersion": "D1-r2-internal-v1",
+  "researchOnly": true,
+  "clinicalValidation": "not_established",
+  "clinicalThreshold": null,
+  "featureOrder": [
+    "age",
+    "sex",
+    "bmi",
+    "totalCholesterol",
+    "glucose"
+  ],
+  "units": {
+    "age": "years",
+    "bmi": "kg/m2",
+    "totalCholesterol": "mmol/L",
+    "glucose": "mmol/L"
+  },
+  "sexEncoding": {
+    "male": 0,
+    "female": 1
+  },
+  "model_sha256": "3348cf2f482f7a3b3440912200dacb8f8e1986bdb2e6cddca7ef4ac7dc1d2090",
+  "protocol_sha256": "df58fc2c3fa71f6669e6e965222333d03c0b9f5d5142689e231633ea8c25075d",
+  "selection_sha256": "e6bca1e5af571243a90ca6eb126f458c6fb997648cf10360a2b62a6260b12c3c",
+  "calibration_sha256": "11b6c4bca43a448085b138ef7c94f994395e41d9e6bd46675b36198a315d93b8",
+  "sources": {
+    "__init__.py": "9c16850d91034b87c16794ac2ffd81cf18b306f9cf29215ad9973c73bf7e28d6",
+    "__main__.py": "cb61a2968ece50bd728f18dfa0f578d8d968d738a9e79bac11a4909dd1d0e812",
+    "bundle.py": "a653d01f332a10198c71e5c0d4c61b7cb2c0be988e670137b3158fab253fe6d9",
+    "data.py": "e872fb6a552f218082717ff0f86d338fabb2ab3df4f7bfe9799d33d7bd9919e5",
+    "evaluation.py": "00ca6470037412647db34207e9c57545f9b063a4c13db91c2a8624b891d526ac",
+    "model.py": "3f6e3d40be131fea4904f1c587ae5d305a6f96487fa5ac00b184b4663a60e96c",
+    "training.py": "70b9bd5a2fec242b9c405fc5dae14d799721caf38f44be9ef98e996ff3cf0711"
+  },
+  "support": {
+    "age": [
+      18.0,
+      79.0
+    ],
+    "sex": [
+      0.0,
+      1.0
+    ],
+    "bmi": [
+      15.5,
+      86.2
+    ],
+    "totalCholesterol": [
+      2.04,
+      9.46
+    ],
+    "glucose": [
+      3.66,
+      23.4
+    ]
+  },
+  "ageBySex": {
+    "male": [
+      18,
+      79
+    ],
+    "female": [
+      20,
+      44
+    ]
+  },
+  "packages": {
+    "scikit-learn": "1.7.2",
+    "numpy": "2.3.5",
+    "torch": "2.9.1"
+  },
+  "selectedFamily": "linear",
+  "limitations": [
+    "Research only; predicts a single HbA1c criterion, not confirmed diabetes or future disease",
+    "No clinical or Kazakhstan validation; no treatment decisions",
+    "Unknown female pregnancy status excluded; female age support is restricted",
+    "Medication questionnaire skips do not establish treatment-naive status",
+    "Input bounds describe observed training support, not medical reference intervals"
+  ],
+  "golden_sha256": "72fc817534b92c0d1e2d60ee223ec6227dc3b28286a40a4d251907c7f5d88497",
+  "codeRevision": "78480b5102070d1aca5cb1326ff49247e43e477d",
+  "sourceProvenanceSha256": "bed9c1b52f5188e4b83022d96e0461aa739a3a06f00f2e81fe918b79e971c2b8"
+}

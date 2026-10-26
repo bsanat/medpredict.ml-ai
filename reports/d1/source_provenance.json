@@ -1,0 +1,39 @@
+{
+  "files": {
+    "src/medpredict_ml/metrics.py": "755a5225ffc7e849cfc9cf75ebd6889ee11c9e283dd06d104c6bb6f9785731f6",
+    "src/medpredict_ml/serving.py": "f270b06726a2a682a9c42d9b3e3873a0142aec14c44938e4b4bf21b7130aa6fb",
+    "src/medpredict_ml/evaluation.py": "568edac3e6e38bdad5d79f9938c13e613c9c0326416af0d45a730f7b05993c9a",
+    "src/medpredict_ml/__init__.py": "bf12c8b792ad7704619e2b1dce80f1ccb6760b9ef2f1f3868435140ac6ab3612",
+    "src/medpredict_ml/export.py": "852892a42770006cc18789128d9909fa7be25de3011c83ae2193c817fe3561d6",
+    "src/medpredict_ml/model.py": "517ef14ef66927b200a1d8fec6d006e6873c087deacc1a872a9612942b2c1199",
+    "src/medpredict_ml/common.py": "34267880d7186d221a9734dc854bbf8b72c0b33ceaf13abb7d66c03e2509d30c",
+    "src/medpredict_ml/__main__.py": "50ccb232116bbae2e7231da4b857272da863565d1b193f52b426ce418d53b9ed",
+    "src/medpredict_ml/training.py": "2975ceae139dd6caca590885559f7ea8013c4e28014f3369fef32b675c36a640",
+    "src/medpredict_ml/data.py": "6e4bb4a4a45aca6806167e8340724bc61e8cf364ea0f4b6fa08fd13566679976",
+    "src/medpredict_ml/classification/bundle.py": "a653d01f332a10198c71e5c0d4c61b7cb2c0be988e670137b3158fab253fe6d9",
+    "src/medpredict_ml/classification/evaluation.py": "00ca6470037412647db34207e9c57545f9b063a4c13db91c2a8624b891d526ac",
+    "src/medpredict_ml/classification/__init__.py": "9c16850d91034b87c16794ac2ffd81cf18b306f9cf29215ad9973c73bf7e28d6",
+    "src/medpredict_ml/classification/model.py": "3f6e3d40be131fea4904f1c587ae5d305a6f96487fa5ac00b184b4663a60e96c",
+    "src/medpredict_ml/classification/__main__.py": "cb61a2968ece50bd728f18dfa0f578d8d968d738a9e79bac11a4909dd1d0e812",
+    "src/medpredict_ml/classification/training.py": "70b9bd5a2fec242b9c405fc5dae14d799721caf38f44be9ef98e996ff3cf0711",
+    "src/medpredict_ml/classification/data.py": "e872fb6a552f218082717ff0f86d338fabb2ab3df4f7bfe9799d33d7bd9919e5"
+  },
+  "config_sha256": "ea20c77472efdd7ef0bac28eb79b87ca2c77b34fec8b171fa413042e95eacf76",
+  "training_packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "pyreadstat": "1.3.1",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.7.2",
+    "torch": "2.9.1",
+    "onnx": "1.19.1",
+    "onnxruntime": "1.23.2",
+    "skl2onnx": "1.19.1"
+  },
+  "scope": "Full published Python source snapshot including shared M2 helpers; aggregate provenance only",
+  "code_revision": "78480b5102070d1aca5cb1326ff49247e43e477d",
+  "dependency_locks": {
+    "requirements.lock": "c80a329912ffe1cbe84e1901260ed39ffa2d067985bc8aa81f14ae3a91401fb3",
+    "requirements-serve.lock": "d5fd63a4cfaa4fdced6e4366238dec8aef6082727f04fac409ee6204655e320c"
+  }
+}

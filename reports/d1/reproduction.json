@@ -1,0 +1,8 @@
+{
+  "scope": "same environment, fresh output workspace; exact reproduction, not independent external validation",
+  "selected_configuration_equal": true,
+  "full_evaluation_report_equal": true,
+  "synthetic_reference_predictions_equal": true,
+  "maximum_probability_difference": 0.0,
+  "note": "Same fixed data and protocol; no tuning after final test"
+}

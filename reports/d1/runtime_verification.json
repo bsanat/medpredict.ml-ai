@@ -1,0 +1,17 @@
+{
+  "scope": "real loopback HTTP; synthetic input; one concurrent request",
+  "platform": "macOS-26.3.1-arm64-arm-64bit",
+  "python": "3.12.14",
+  "modelVersion": "D1-r2-internal-v1",
+  "model_sha256": "3348cf2f482f7a3b3440912200dacb8f8e1986bdb2e6cddca7ef4ac7dc1d2090",
+  "attempts": 30,
+  "successes": 30,
+  "errors": 0,
+  "cold_start_to_ready_ms": 2095.693957991898,
+  "warm_p50_ms": 0.9427294717170298,
+  "warm_p95_ms": 2.461752475937824,
+  "max_absolute_probability_difference": 0.0,
+  "engineering_target_p95_ms": 1000,
+  "engineering_target_met": true,
+  "limitations": "Local machine only; not a deployment SLA, load test, browser check or clinical evaluation"
+}

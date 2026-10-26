@@ -1,0 +1,152 @@
+{
+  "method": "sigmoid on held-out calibration logits",
+  "n": 203,
+  "positives": 5,
+  "selection_sha256": "e6bca1e5af571243a90ca6eb126f458c6fb997648cf10360a2b62a6260b12c3c",
+  "model_sha256": "3348cf2f482f7a3b3440912200dacb8f8e1986bdb2e6cddca7ef4ac7dc1d2090",
+  "clinical_threshold": null,
+  "threshold_policy": "No clinician-approved decision threshold; exploratory points only, not clinical recommendations",
+  "threshold_cohort_points": [
+    {
+      "n": 203,
+      "positives": 5,
+      "prevalence": 0.024630541871921183,
+      "average_precision": 0.532936507936508,
+      "auroc": 0.9232323232323233,
+      "brier": 0.017223031091368055,
+      "log_loss": 0.07106408066686849,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.2,
+          "n": 200,
+          "predicted": 0.008495368396745077,
+          "observed": 0.015
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.4,
+          "n": 2,
+          "predicted": 0.3206015676174821,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.8,
+          "upper": 1.0,
+          "n": 1,
+          "predicted": 0.998765800197242,
+          "observed": 1.0
+        }
+      ],
+      "threshold": 0.1,
+      "confusion_matrix": [
+        [
+          196.0,
+          2.0
+        ],
+        [
+          3.0,
+          2.0
+        ]
+      ],
+      "sensitivity": 0.4,
+      "specificity": 0.98989898989899,
+      "ppv": 0.5,
+      "npv": 0.9849246231155779
+    },
+    {
+      "n": 203,
+      "positives": 5,
+      "prevalence": 0.024630541871921183,
+      "average_precision": 0.532936507936508,
+      "auroc": 0.9232323232323233,
+      "brier": 0.017223031091368055,
+      "log_loss": 0.07106408066686849,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.2,
+          "n": 200,
+          "predicted": 0.008495368396745077,
+          "observed": 0.015
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.4,
+          "n": 2,
+          "predicted": 0.3206015676174821,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.8,
+          "upper": 1.0,
+          "n": 1,
+          "predicted": 0.998765800197242,
+          "observed": 1.0
+        }
+      ],
+      "threshold": 0.2,
+      "confusion_matrix": [
+        [
+          197.0,
+          1.0
+        ],
+        [
+          3.0,
+          2.0
+        ]
+      ],
+      "sensitivity": 0.4,
+      "specificity": 0.9949494949494949,
+      "ppv": 0.6666666666666666,
+      "npv": 0.985
+    },
+    {
+      "n": 203,
+      "positives": 5,
+      "prevalence": 0.024630541871921183,
+      "average_precision": 0.532936507936508,
+      "auroc": 0.9232323232323233,
+      "brier": 0.017223031091368055,
+      "log_loss": 0.07106408066686849,
+      "calibration_bins": [
+        {
+          "lower": 0.0,
+          "upper": 0.2,
+          "n": 200,
+          "predicted": 0.008495368396745077,
+          "observed": 0.015
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.4,
+          "n": 2,
+          "predicted": 0.3206015676174821,
+          "observed": 0.5
+        },
+        {
+          "lower": 0.8,
+          "upper": 1.0,
+          "n": 1,
+          "predicted": 0.998765800197242,
+          "observed": 1.0
+        }
+      ],
+      "threshold": 0.5,
+      "confusion_matrix": [
+        [
+          198.0,
+          0.0
+        ],
+        [
+          4.0,
+          1.0
+        ]
+      ],
+      "sensitivity": 0.2,
+      "specificity": 1.0,
+      "ppv": 1.0,
+      "npv": 0.9801980198019802
+    }
+  ]
+}

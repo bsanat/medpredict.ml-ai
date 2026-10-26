@@ -1,0 +1,107 @@
+{
+  "source_counts": {
+    "P_DEMO": 15560,
+    "P_BMX": 14300,
+    "P_TCHOL": 12198,
+    "P_GLU": 5090,
+    "P_GHB": 10409,
+    "P_DIQ": 14986
+  },
+  "attrition": [
+    {
+      "step": "age 18–79, documented sex",
+      "excluded": 6549,
+      "remaining": 9011
+    },
+    {
+      "step": "positive fasting weight; exclude SAS zero decoding artifacts",
+      "excluded": 5291,
+      "remaining": 3720
+    },
+    {
+      "step": "male or observed not-pregnant female",
+      "excluded": 1226,
+      "remaining": 2494
+    },
+    {
+      "step": "explicit self-report of no doctor-diagnosed diabetes; exclude borderline/unknown",
+      "excluded": 396,
+      "remaining": 2098
+    },
+    {
+      "step": "no reported pills or documented DIQ065 skip; unknown responses excluded",
+      "excluded": 13,
+      "remaining": 2085
+    },
+    {
+      "step": "exclude any reported insulin; structural skip remains unassessed",
+      "excluded": 0,
+      "remaining": 2085
+    },
+    {
+      "step": "five finite complete-case inputs",
+      "excluded": 56,
+      "remaining": 2029
+    },
+    {
+      "step": "observed positive HbA1c; never impute label",
+      "excluded": 2,
+      "remaining": 2027
+    },
+    {
+      "step": "survey design available",
+      "excluded": 0,
+      "remaining": 2027
+    }
+  ],
+  "missing_before_exclusions": {
+    "SEQN": 0,
+    "age": 0,
+    "sex": 0,
+    "RIDEXPRG": 13686,
+    "stratum": 0,
+    "psu": 0,
+    "bmi": 2423,
+    "totalCholesterol": 4732,
+    "glucose": 10816,
+    "weight": 10470,
+    "LBXGH": 5823,
+    "DIQ010": 574,
+    "DIQ050": 14115,
+    "DIQ070": 12881,
+    "DIQ160": 6044
+  },
+  "n": 2027,
+  "positives": 49,
+  "negatives": 1978,
+  "target": "single measured HbA1c >=6.5%; not confirmed diabetes",
+  "limitations": [
+    "Insulin question skipped in undiagnosed respondents: treatment-naive status not established",
+    "Pills skipped per DIQ065 retained only with explicit DIQ160=2; skip is not observed no treatment",
+    "Unknown female pregnancy status excluded, substantially restricting female age coverage",
+    "Complete-case fasting selection; no Kazakhstan or clinical validation"
+  ],
+  "partitions": {
+    "calibration": {
+      "n": 203,
+      "positives": 5,
+      "negatives": 198
+    },
+    "test": {
+      "n": 406,
+      "positives": 10,
+      "negatives": 396
+    },
+    "threshold": {
+      "n": 203,
+      "positives": 5,
+      "negatives": 198
+    },
+    "train": {
+      "n": 1215,
+      "positives": 29,
+      "negatives": 1186
+    }
+  },
+  "precision_caution": "Partition class counts are feasibility checks, not proof of precise calibration or sensitivity"
+}

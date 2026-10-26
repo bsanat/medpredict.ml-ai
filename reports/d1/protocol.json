@@ -1,0 +1,70 @@
+{
+  "task": "D1-HBA1C-SCREEN-v1",
+  "config": {
+    "task": "D1-HBA1C-SCREEN-v1",
+    "protocol_version": "D1-r2",
+    "seed": 2026,
+    "minimum_partition_positives": 5,
+    "precision_status": "exploratory; class-count gate is not a clinical sample-size justification",
+    "cv_folds": 3,
+    "logistic_c": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "hgb_learning_rates": [
+      0.05,
+      0.1
+    ],
+    "hgb_leaf_nodes": [
+      7,
+      15
+    ],
+    "mlp_hidden": [
+      [
+        16
+      ],
+      [
+        32,
+        16
+      ],
+      [
+        64,
+        32
+      ]
+    ],
+    "mlp_seeds": [
+      2026,
+      2027,
+      2028
+    ],
+    "max_epochs": 300,
+    "patience": 25,
+    "batch_size": 128,
+    "selection_metric": "unweighted mean fold average_precision",
+    "simplicity_margin_ap": 0.01,
+    "bootstrap_replicates": 1000,
+    "clinical_threshold": null,
+    "wall_clock_seconds": 7200
+  },
+  "config_sha256": "ea20c77472efdd7ef0bac28eb79b87ca2c77b34fec8b171fa413042e95eacf76",
+  "dataset_sha256": "cccb9f3d93f388ae03336400c4b6830d63f461dd98690a0d385524e43af51c19",
+  "sources": {
+    "__init__.py": "9c16850d91034b87c16794ac2ffd81cf18b306f9cf29215ad9973c73bf7e28d6",
+    "__main__.py": "cb61a2968ece50bd728f18dfa0f578d8d968d738a9e79bac11a4909dd1d0e812",
+    "bundle.py": "a653d01f332a10198c71e5c0d4c61b7cb2c0be988e670137b3158fab253fe6d9",
+    "data.py": "e872fb6a552f218082717ff0f86d338fabb2ab3df4f7bfe9799d33d7bd9919e5",
+    "evaluation.py": "00ca6470037412647db34207e9c57545f9b063a4c13db91c2a8624b891d526ac",
+    "model.py": "3f6e3d40be131fea4904f1c587ae5d305a6f96487fa5ac00b184b4663a60e96c",
+    "training.py": "70b9bd5a2fec242b9c405fc5dae14d799721caf38f44be9ef98e996ff3cf0711"
+  },
+  "eligibility_revision": "D1-r2: documented DIQ065 skips retained as unassessed, not medication-free",
+  "feature_order": [
+    "age",
+    "sex",
+    "bmi",
+    "totalCholesterol",
+    "glucose"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "task": "D1-HBA1C-SCREEN-v1",
+  "schemaVersion": "2.0",
+  "values": {"age": 35, "sex": "male", "bmi": 25.0, "totalCholesterol": 5.0, "glucose": 5.5},
+  "units": {"age": "years", "bmi": "kg/m2", "totalCholesterol": "mmol/L", "glucose": "mmol/L"},
+  "context": {
+    "fasting": true,
+    "sameExamination": true,
+    "hba1cKnown": false,
+    "knownDiabetes": false,
+    "glucoseLoweringMedication": false,
+    "pregnancyStatus": "not_applicable"
+  }
+}
