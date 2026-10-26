@@ -1,0 +1,21 @@
+{
+  "task": "D1-HBA1C-SCREEN-v1",
+  "protocol_version": "D1-r2",
+  "seed": 2026,
+  "minimum_partition_positives": 5,
+  "precision_status": "exploratory; class-count gate is not a clinical sample-size justification",
+  "cv_folds": 3,
+  "logistic_c": [0.01, 0.1, 1.0, 10.0],
+  "hgb_learning_rates": [0.05, 0.1],
+  "hgb_leaf_nodes": [7, 15],
+  "mlp_hidden": [[16], [32, 16], [64, 32]],
+  "mlp_seeds": [2026, 2027, 2028],
+  "max_epochs": 300,
+  "patience": 25,
+  "batch_size": 128,
+  "selection_metric": "unweighted mean fold average_precision",
+  "simplicity_margin_ap": 0.01,
+  "bootstrap_replicates": 1000,
+  "clinical_threshold": null,
+  "wall_clock_seconds": 7200
+}

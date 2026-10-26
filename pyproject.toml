@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "medpredict-ml"
-version = "0.1.0"
-description = "Reproducible NHANES systolic blood pressure estimation experiment"
+version = "0.2.0"
+description = "Reproducible NHANES screening and measurement research"
 requires-python = ">=3.11,<3.14"
 dependencies = [
   "numpy==2.3.5", "pandas==2.2.3", "pyreadstat==1.3.1", "scipy==1.16.3",
@@ -14,10 +14,12 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-test = ["pytest==8.4.2", "pytest-cov==7.0.0"]
+test = ["pytest==8.4.2", "pytest-cov==7.0.0", "httpx==0.28.1"]
+serve = ["fastapi==0.115.12", "pydantic==2.11.3", "uvicorn==0.34.2"]
 
 [project.scripts]
 medpredict-ml = "medpredict_ml.__main__:main"
+medpredict-d1 = "medpredict_ml.classification.__main__:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
